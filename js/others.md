@@ -32,7 +32,7 @@
    ```javascript
    export const emptyObject = Object.freeze({ })
    ```
-4. 创建过去七天的数组，如果将代码中的减号换成加号，你将得到未来7天的数组集合
+4. 创建过去七天的数组，如果将代码中的减号换成加号，你将得到未来7天的数组集合tt
    ```javascript
    [...Array(7).keys()].map(days => new Date(Date.now() - 86400000 * days));
    ```
